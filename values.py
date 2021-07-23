@@ -1,7 +1,7 @@
 import os
 import time
 
-class value(object):
+class Config(object):
 
     # Get a bot token from botfather
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
