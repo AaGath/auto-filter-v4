@@ -45,3 +45,4 @@ class Config(object):
     CONNECT_COMMAND = os.environ.get("CONNECT_COMMANDD", "connect")
     DISCONNECT_COMMAND = os.environ.get("DISCONNECT_COMMANDD", "disconnect")
 
+    BOT_START_TIME = time.time()
