@@ -4,13 +4,8 @@ import pymongo
 
 if bool(os.environ.get("WEBHOOK", False)):
 
-    from values import Config
+from values import Config
 
-else:
-
-    from config import Config
-
- 
 
 myclient = pymongo.MongoClient(Config.DATABASE_URI)
 
