@@ -1,18 +1,10 @@
 import os
-
 import re
-
 import pymongo
+from values import Config
 
 if bool(os.environ.get("WEBHOOK", False)):
 
-from values import Config
-
-else:
-
-    from config import Config
-
- 
 
 myclient = pymongo.MongoClient(Config.DATABASE_URI)
 
