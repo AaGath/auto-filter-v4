@@ -1,12 +1,11 @@
 import os
 import ast
 
+from values import Config
 from pyrogram import Client as trojanz
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 if bool(os.environ.get("WEBHOOK", False)):
-from values import Config
-
 
 from bot.database.filters_mdb import del_all, find_filter
 
