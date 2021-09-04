@@ -7,6 +7,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 from pyrogram.errors import UserNotParticipant
 from bot import Translation # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
+import random
 
 db = Database()
 
@@ -123,7 +124,7 @@ async def start(bot, update):
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo="https://telegra.ph/file/21db53928e91f9c4f5c7d.jpg",
+        photo=random.choice(randomphotos.PHOTOS),
         caption=Translation.START_TEXT.format(
                 update.from_user.mention),
         reply_markup=reply_markup,
@@ -145,7 +146,7 @@ async def help(bot, update):
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo="https://telegra.ph/file/28c5e297f5874547f8ecb.jpg",
+        photo=random.choice(randomphotos.PHOTOS),
         caption=Translation.HELP_TEXT,
         reply_markup=reply_markup,
         parse_mode="html",
