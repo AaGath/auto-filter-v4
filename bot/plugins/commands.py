@@ -9,6 +9,11 @@ from bot import Translation # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
 from bot.plugins.randomphotos import photos
 import random
+import html
+import re
+import time
+from functools import partial
+from contextlib import suppress
 
 db = Database()
 
