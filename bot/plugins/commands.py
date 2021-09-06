@@ -125,7 +125,7 @@ async def start(bot, update):
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo=random.choice(randomphotos.PHOTOS),
+        photo=random.choice(randomphotos.photos),
         caption=Translation.START_TEXT.format(
                 update.from_user.mention),
         reply_markup=reply_markup,
