@@ -15,11 +15,18 @@ from functools import partial
 from contextlib import suppress
 
 PHOTOS = [
-    "https://telegra.ph/file/24145d0538190914ec841.jpg",
-    "https://telegra.ph/file/976a7a629af652cce8819.jpg",
-    "https://telegra.ph/file/60a52177ecd46b6078b9f.jpg",
-    "https://telegra.ph/file/95a95ccae435617f2579a.jpg",
-    "https://telegra.ph/file/f8376776c7ed85e1edc94.jpg",
+    "https://telegra.ph/file/2f4475621bd45ef834196.jpg",
+    "https://telegra.ph/file/2f4475621bd45ef834196.jpg",
+    "https://telegra.ph/file/15829f51bad4db9608af0.jpg",
+    "https://telegra.ph/file/15829f51bad4db9608af0.jpg",
+    "https://telegra.ph/file/608313fb9f529b6bc8ec1.jpg",
+    "https://telegra.ph/file/608313fb9f529b6bc8ec1.jpg",
+    "https://telegra.ph/file/52809564a7d6d5c73c8a2.jpg",
+    "https://telegra.ph/file/52809564a7d6d5c73c8a2.jpg",
+    "https://telegra.ph/file/c686d9040de18c17cc1e0.jpg",
+    "https://telegra.ph/file/c686d9040de18c17cc1e0.jpg",
+    "https://telegra.ph/file/9da2d9bc599aa36b9d89a.jpg",
+    "https://telegra.ph/file/9da2d9bc599aa36b9d89a.jpg",
 ]
 
 db = Database()
