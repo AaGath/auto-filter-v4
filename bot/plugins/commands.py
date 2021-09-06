@@ -147,7 +147,7 @@ async def help(bot, update):
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo=random.choice(randomphotos.PHOTOS),
+        photo=random.choice(randomphotos.photos),
         caption=Translation.HELP_TEXT,
         reply_markup=reply_markup,
         parse_mode="html",
