@@ -7,13 +7,21 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 from pyrogram.errors import UserNotParticipant
 from bot import Translation # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
-from bot.plugins.randomphotos import photos
+from bot.plugins.sarah import photos
 import random
 import html
 import re
 import time
 from functools import partial
 from contextlib import suppress
+
+PHOTOS = [
+    "https://telegra.ph/file/24145d0538190914ec841.jpg",
+    "https://telegra.ph/file/976a7a629af652cce8819.jpg",
+    "https://telegra.ph/file/60a52177ecd46b6078b9f.jpg",
+    "https://telegra.ph/file/95a95ccae435617f2579a.jpg",
+    "https://telegra.ph/file/f8376776c7ed85e1edc94.jpg"
+]
 
 db = Database()
 
@@ -130,7 +138,7 @@ async def start(bot, update):
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo=random.choice(randomphotos.photos),
+        photo=random.choice(PHOTOS),
         caption=Translation.START_TEXT.format(
                 update.from_user.mention),
         reply_markup=reply_markup,
